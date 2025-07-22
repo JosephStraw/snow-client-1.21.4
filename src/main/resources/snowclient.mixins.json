@@ -3,7 +3,7 @@
 	"package": "net.snow.customui.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"SnowHUDMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
