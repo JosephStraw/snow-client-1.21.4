@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "snowclient",
+	"version": "${version}",
+	"name": "Snow-Client",
+	"description": "The Snow Client mod is a work in progress interface mod that allows the user to be able to see their ping and FPS in-game.",
+	"authors": [
+		"CommonWealthSnow"
+	],
+	"contact": {
+		"homepage": "https://josephstraw.github.io/ThunkingWales/",
+		"sources": "https://github.com/JosephStraw"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/snowclient/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.snow.customui.SnowClient"
+		],
+		"fabric-datagen": [
+			"net.snow.customui.SnowClientDataGenerator"
+		],
+		"Client": [
+			"net.snow.customui.SnowClientJClient"
+		]
+	},
+	"mixins": [
+		"snowclient.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
