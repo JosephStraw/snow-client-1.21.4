@@ -21,8 +21,9 @@
 		"fabric-datagen": [
 			"net.snow.customui.SnowClientDataGenerator"
 		],
-		"Client": [
-			"net.snow.customui.SnowClientJClient"
+		"client": [
+			"net.snow.customui.SnowClientJClient",
+			"net.snow.customui.OverlayKeybind"
 		]
 	},
 	"mixins": [
